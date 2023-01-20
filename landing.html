@@ -9,8 +9,195 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <title>Yard Sale</title>
+    <style>
+        :root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md:16px;
+    --lg: 20px;
+    }
+    * {
+        font-family: 'Quicksand', sans-serif;
+    }
+    body{
+        font-family: 'Quicksand', sans-serif;
+        margin:0;
+    }
+    .cards-container{
+        display: grid;
+        padding: 30px;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        place-items: center;
+        column-gap: 3rem;
+    }
+    .product-card {
+        width: 18rem;
+        display: grid;
+        grid-template-columns: auto 20%;
+        grid-template-rows: 1fr auto;
+    }
+    .product-img {
+        grid-column: 1/3;
+    }
+    .product-details {
+        padding-left: 10px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        place-items: start;
+        margin-bottom: 20px;
+    }
+    .product-details > p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .product-detail-title{
+        font-weight: bold;
+    }
+    .product-detail-name {
+        font-size: var(--sm);
+        color: var(--);
+    }
+    .product-addtocart{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin:19%;
+    }
+    .product-img {
+        width:100%;
+        border-radius: 20px;
+    }
+    </style>
 </head>
 <body>
-    <navbar>Testing </navbar>
+    <section class="main-container">
+        <div class="cards-container">
+            <div class="product-card">
+                <img class="product-img" src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930" alt="airpods">
+                <div class="product-details" >
+                    <p class="product-detail-title">$200,00</p>
+                    <p class="product-detail-name">Vintage Lamp</p>
+                </div>
+                <figure class="product-addtocart" >
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="add to cart">
+                </figure>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930" alt="airpods">
+                <div class="product-details">
+                    <p class="product-detail-title">$200,00</p>
+                    <p class="product-detail-name">Vintage Lamp</p>
+                </div>
+                <figure class="product-addtocart">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="add to cart">
+                </figure>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930" alt="airpods">
+                <div class="product-details">
+                    <p class="product-detail-title">$200,00</p>
+                    <p class="product-detail-name">Vintage Lamp</p>
+                </div>
+                <figure class="product-addtocart">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="add to cart">
+                </figure>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930" alt="airpods">
+                <div class="product-details">
+                    <p class="product-detail-title">$200,00</p>
+                    <p class="product-detail-name">Vintage Lamp</p>
+                </div>
+                <figure class="product-addtocart">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="add to cart">
+                </figure>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930" alt="airpods">
+                <div class="product-details">
+                    <p class="product-detail-title">$200,00</p>
+                    <p class="product-detail-name">Vintage Lamp</p>
+                </div>
+                <figure class="product-addtocart">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="add to cart">
+                </figure>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930" alt="airpods">
+                <div class="product-details">
+                    <p class="product-detail-title">$200,00</p>
+                    <p class="product-detail-name">Vintage Lamp</p>
+                </div>
+                <figure class="product-addtocart">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="add to cart">
+                </figure>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930" alt="airpods">
+                <div class="product-details">
+                    <p class="product-detail-title">$200,00</p>
+                    <p class="product-detail-name">Vintage Lamp</p>
+                </div>
+                <figure class="product-addtocart">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="add to cart">
+                </figure>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930" alt="airpods">
+                <div class="product-details">
+                    <p class="product-detail-title">$200,00</p>
+                    <p class="product-detail-name">Vintage Lamp</p>
+                </div>
+                <figure class="product-addtocart">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="add to cart">
+                </figure>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930" alt="airpods">
+                <div class="product-details">
+                    <p class="product-detail-title">$200,00</p>
+                    <p class="product-detail-name">Vintage Lamp</p>
+                </div>
+                <figure class="product-addtocart">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="add to cart">
+                </figure>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930" alt="airpods">
+                <div class="product-details">
+                    <p class="product-detail-title">$200,00</p>
+                    <p class="product-detail-name">Vintage Lamp</p>
+                </div>
+                <figure class="product-addtocart">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="add to cart">
+                </figure>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930" alt="airpods">
+                <div class="product-details">
+                    <p class="product-detail-title">$200,00</p>
+                    <p class="product-detail-name">Vintage Lamp</p>
+                </div>
+                <figure class="product-addtocart">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="add to cart">
+                </figure>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930" alt="airpods">
+                <div class="product-details">
+                    <p class="product-detail-title">$200,00</p>
+                    <p class="product-detail-name">Vintage Lamp</p>
+                </div>
+                <figure class="product-addtocart">
+                    <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="add to cart">
+                </figure>
+            </div>
+            
+        </div>
+    </section>
 </body>
 </html>
