@@ -11,17 +11,6 @@
     <title>Yard Sale</title>
 
     <style>
-        :root{
-    --white: #FFFFFF;
-    --black: #000000;
-    --dark: #232830;
-    --very-light-pink: #C7C7C7;
-    --text-input-field: #F7F7F7;
-    --hospital-green: #ACD9B2;
-    --sm: 14px;
-    --md:16px;
-    --lg: 20px;
-    }
     :root{
     --white: #FFFFFF;
     --black: #000000;
@@ -58,13 +47,10 @@
     }
     .order{
         display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: auto 1fr auto;
         gap: 16px;
         align-items: center;
-        background-color: var(--text-input-field);
-        margin-bottom: 24px;
-        border-radius: 8px;
-        padding:  0 24px;
+        margin-bottom: 17px;
     }
     .order p:nth-child(1){
         display: flex;
@@ -82,36 +68,14 @@
         text-align: end;
         font-weight: bold;
     }
-    .shopping-cart {
-        display: grid;
-        grid-template-columns: auto 1fr auto auto;
-        gap: 16px;
-        margin-bottom: 24px;
-        align-items: center;
-    }
-    .shopping-cart figure img{
-        width: 70px;
-        height: 70px;
-        object-fit: cover;
-        border-radius: 20px;
-    }
-    .shopping-cart figure {
-        margin: 0px;
-    }
-    .shopping-cart p:nth-child(2){
-        color: var(--very-light-pink);
-    }
-    .shopping-cart p:nth-child(3){
-        font-size: var(--md);
-        font-weight: bold;
-    }
+
 
     </style>
 </head>
 <body>
     <div class="my-order">
         <div class="my-order-container">
-            <h1 class="title">My order</h1>
+            <h1 class="title">My orders</h1>
             <div class="my-order-content">
                 <div class="order">
                     <p>
@@ -119,26 +83,48 @@
                         <span>6 Articles</span>
                     </p>
                     <p>$600,000</p>
+                    <img src="/Platzi_YardSale_Icons/flechita.svg" alt="arrow">
                 </div>
-                <div class="shopping-cart">
-                    <figure><img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930" alt="green lamp"></figure>
-                    <p>Green Lamp</p>
-                    <p>$200,00</p>
+                <div class="order">
+                    <p>
+                        <span>02.03.2023</span>
+                        <span>6 Articles</span>
+                    </p>
+                    <p>$600,000</p>
+                    <img src="/Platzi_YardSale_Icons/flechita.svg" alt="arrow">
                 </div>
-                <div class="shopping-cart">
-                    <figure><img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930" alt="green lamp"></figure>
-                    <p>Green Lamp</p>
-                    <p>$200,00</p>
+                <div class="order">
+                    <p>
+                        <span>02.03.2023</span>
+                        <span>6 Articles</span>
+                    </p>
+                    <p>$600,000</p>
+                    <img src="/Platzi_YardSale_Icons/flechita.svg" alt="arrow">
                 </div>
-                <div class="shopping-cart">
-                    <figure><img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930" alt="green lamp"></figure>
-                    <p>Green Lamp</p>
-                    <p>$200,00</p>
+                <div class="order">
+                    <p>
+                        <span>02.03.2023</span>
+                        <span>6 Articles</span>
+                    </p>
+                    <p>$600,000</p>
+                    <img src="/Platzi_YardSale_Icons/flechita.svg" alt="arrow">
                 </div>
-                <div class="shopping-cart">
-                    <figure><img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930" alt="green lamp"></figure>
-                    <p>Green Lamp</p>
-                    <p>$200,00</p>
+                <div class="order">
+                    <p>
+                        <span>02.03.2023</span>
+                        <span>6 Articles</span>
+                    </p>
+                    <p>$600,000</p>
+                    <img src="/Platzi_YardSale_Icons/flechita.svg" alt="arrow">
+                </div>
+                <div class="order">
+                    <p>
+                        <span>02.03.2023</span>
+                        <span>6 Articles</span>
+                    </p>
+                    <p>$600,000</p>
+                    <img src="/Platzi_YardSale_Icons/flechita.svg" alt="arrow">
+                </div>
                 </div>
             </div>
         </div>
