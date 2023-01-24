@@ -25,17 +25,88 @@
         font-family: 'Quicksand', sans-serif;
         margin:0;
     }
+    .product-detail {
+        width: 360px;
+        padding-bottom: 24px;
+        height: 100vh;
+        position: absolute;
+        right: 0;
+    }
+    .product-detail-close {
+        cursor: pointer;
+        position: absolute;
+        top:24px;
+        left: 24px;
+        background: var(--white);
+        width: 14px;
+        height: 14px;
+        z-index: 2;
+        padding: 12px;
+        border-radius: 50%;
+    }
+    .product-detail >img:nth-child(2){
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+        border-radius: 0 0 20px 20px;
+    }
+    .product-info {
+        margin: 24px 24px 0 24px;
+    }
+    .product-info p:nth-child(1){
+        font-weight: bold;
+        font-size: var(--md);
+        margin-top: 0;
+        margin-bottom: 4px;
+    }
+    .product-info p:nth-child(2){
+        font-size: var(--md);
+        margin-top: 0;
+        margin-bottom: 36px;
+    }
+    .product-info p:nth-child(3){
+        font-size: var(--sm);
+        margin-top: 0;
+        margin-bottom: 36px;
+    }
+    .primary-button {
+        margin-top: 2rem;
+        border: none;
+        border-radius: 8px;
+        color: var(--white);
+        background-color: var(--hospital-green);
+        width: 100%;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        height: 2rem;
+    }
+    .add-to-cart-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width: 640px){
+        .product-detail{
+            width: 100%;
+        }
+    }
     </style>
 </head>
 <body>
     <aside class="product-detail">
-        <img src="/Platzi_YardSale_Icons/icon_close.png" alt="close">
+        <div class="product-detail-close">
+            <img src="/Platzi_YardSale_Icons/icon_close.png" alt="close">
+        </div>
         <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930" alt="">
         <div class="product-info">
             <p>$200,00</p>
             <p>Green Lamp</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec nulla vestibulum orci convallis dictum ut id elit. Nunc vehicula et odio nec suscipit. Curabitur hendrerit tristique convallis. Mauris non leo eu mauris elementum elementum. Vivamus finibus eleifend odio sit amet varius. Integer nec ligula id ipsum posuere fermentum. Suspendisse potenti. Suspendisse id felis est. Quisque varius tellus eleifend, tempor turpis vitae, tristique dolor. Praesent lacinia arcu sed tortor viverra, tempor ultricies mi venenatis. Phasellus posuere, enim at scelerisque feugiat, nunc urna maximus enim, nec consequat dolor arcu vel nibh. Vivamus a ipsum sed tortor fermentum sollicitudin viverra euismod massa. Donec pellentesque urna faucibus tortor ultricies, eu bibendum neque scelerisque. Donec fermentum fringilla tellus euismod fermentum. Vivamus a rhoncus purus.</p>
-            <button class="primary-button">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, quis.
+            Incidunt aut ea delectus aliquam cumque eum nisi recusandae officia.
+            Cum labore aut qui harum deleniti deserunt voluptatibus assumenda! Laborum.
+            Vero dolore voluptatum laboriosam a nostrum aliquid eligendi molestiae unde!</p>
+            <button class="primary-button add-to-cart-button">
                 <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="add to cart">
                 Add to cart
             </button>
