@@ -28,7 +28,7 @@ function toggleBurgerMenu (){
 
 
 /* agregar el carrito de compras*/
-const shoppingCart = document.querySelector('.product-detail')
+const shoppingCart = document.querySelector('.shopping-cart-container')
 const shoppingCartIcon = document.querySelector('.shoppingCartIcon')
 
 shoppingCartIcon.addEventListener('click',toggleShoppingCart)
