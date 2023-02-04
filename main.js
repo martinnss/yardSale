@@ -43,3 +43,70 @@ function toggleShoppingCart(){
     }
     shoppingCart.classList.toggle('inactive')
 }
+
+
+
+/*product list */
+
+const productList = []
+productList.push({
+    name: 'Vintage Lamp',
+    price: 200,
+    image: 'https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930',
+})
+productList.push({
+    name: 'Vintage Lamp',
+    price: 200,
+    image: 'https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930',
+})
+productList.push({
+    name: 'Vintage Lamp',
+    price: 200,
+    image: 'https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930',
+})
+
+/* En esta funcion, se crea una variable para cada elemento del HTML (iterando cada elemento del array)
+despues se procede a agregar sus respectivas clases, src, innerText, etc
+por ultimo se procede a maquetear desde adentro hacia afuera (appendChild)
+        */
+
+const cardsContainer = document.querySelector('.cards-container')
+
+function renderProducts(arr) {
+    for (product of arr) {
+    const productCard = document.createElement('div');
+    productCard.classList.add('product-card');
+    
+    const productImg = document.createElement('img');
+    productImg.setAttribute('src', product.image);
+    productImg.classList.add('product-img')
+    
+    const productDetails = document.createElement('div');
+    productDetails.classList.add('product-details');
+    
+    const productPrice = document.createElement('p');
+    productPrice.innerText = '$' + product.price;
+    productPrice.classList.add('product-detail-title')
+    const productName = document.createElement('p');
+    productName.innerText = product.name;
+    productPrice.classList.add('product-detail-name')
+    
+    productDetails.appendChild(productPrice)
+    productDetails.appendChild(productName)
+    
+    const productInfoFigure = document.createElement('figure');
+    productInfoFigure.classList.add('product-addtocart')
+    const productImgCart = document.createElement('img');
+    productImgCart.setAttribute('src', './icons/bt_add_to_cart.svg');
+    
+    productInfoFigure.appendChild(productImgCart)
+    
+    productCard.appendChild(productImg)
+    productCard.appendChild(productDetails)
+    productCard.appendChild(productInfoFigure)
+
+    cardsContainer.appendChild(productCard);
+    }
+}
+
+renderProducts(productList)
