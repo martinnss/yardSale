@@ -22,6 +22,9 @@ function toggleBurgerMenu (){
     if(!shoppingCart.classList.contains('inactive')){
         shoppingCart.classList.toggle('inactive')
     }
+    if(!productDetail.classList.contains('inactive')){
+        productDetail.classList.add('inactive')
+    }
     burgerMenuInside.classList.toggle('inactive')
 }
 
@@ -40,6 +43,9 @@ function toggleShoppingCart(){
     }
     if(!desktopMenu.classList.contains('inactive')){
         desktopMenu.classList.toggle('inactive')
+    }
+    if(!productDetail.classList.contains('inactive')){
+        productDetail.classList.add('inactive')
     }
     shoppingCart.classList.toggle('inactive')
 }
@@ -65,6 +71,29 @@ productList.push({
     image: 'https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/06/il_1588xN.1727616325_tgly.jpg?auto=format&q=60&fit=max&w=930',
 })
 
+
+
+/* Toggle product detail */
+const productDetail = document.querySelector('.product-detail')
+const productDetailCloseIcon = document.querySelector('.product-detail-close')
+
+function openProductDetail(){ /*El add event listener de esta función está en la función de abajo */
+    if(!shoppingCart.classList.contains('inactive')){
+        shoppingCart.classList.toggle('inactive')
+    }
+    if(!burgerMenuInside.classList.contains('inactive')){
+        burgerMenuInside.classList.toggle('inactive')
+    }
+    productDetail.classList.remove('inactive')
+}
+
+
+productDetailCloseIcon.addEventListener('click',closeProductDetail)
+
+function closeProductDetail(){
+    productDetail.classList.add('inactive')
+}
+
 /* En esta funcion, se crea una variable para cada elemento del HTML (iterando cada elemento del array)
 despues se procede a agregar sus respectivas clases, src, innerText, etc
 por ultimo se procede a maquetear desde adentro hacia afuera (appendChild)
@@ -80,6 +109,8 @@ function renderProducts(arr) {
     const productImg = document.createElement('img');
     productImg.setAttribute('src', product.image);
     productImg.classList.add('product-img')
+    
+    productImg.addEventListener('click',openProductDetail)
     
     const productDetails = document.createElement('div');
     productDetails.classList.add('product-details');
@@ -110,3 +141,4 @@ function renderProducts(arr) {
 }
 
 renderProducts(productList)
+

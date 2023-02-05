@@ -195,7 +195,6 @@
 }
 .title-container{
   display: flex;
-
 }
 .title-container img{
   transform: rotate(180deg);
@@ -282,6 +281,7 @@
 }
 .product-img {
   grid-column: 1/3;
+  cursor: pointer;
 }
 .product-details {
   padding-left: 10px;
@@ -321,6 +321,7 @@
   height: 100vh;
   position: absolute;
   right: 0;
+  background: var(--white)
 }
 .product-detail-close {
   cursor: pointer;
